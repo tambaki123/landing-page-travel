@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500;600&family=Mulish:wght@300;700&family=Playfair+Display:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+      integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="container">
+      <a href="" class="logo"><img src="./img/logo.png" alt="" /></a>
+      <nav>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Destinations</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Partner</a></li>
+        <button class="btn-log">Login</button>
+        <i class="fa-solid fa-xmark close"></i>
+      </nav>
+      <div class="bars"><i class="fa-solid fa-bars bars-icon"></i></div>
+    </header>
+    <button class="topbtn"><i class="fa-solid fa-angles-up"></i></button>
+    <div class="modal hide">
+      <div class="modal-bg">
+        <div class="modal-img">
+          <img src="./img/Thousand-03.png" alt="" class="modalimg" />
+        </div>
+        <div class="modal-container">
+          <div class="modal-header">
+            <h3>Login</h3>
+            <i class="fa-solid fa-xmark close-icon"></i>
+          </div>
+          <div class="modal-body">
+            <label for="user">User</label>
+            <input type="text" id="user" placeholder="User..." />
+            <span class="error" id="error1"></span>
+            <label for="password">Password</label>
+            <div class="form-group">
+              <input type="password" id="password" placeholder="Password..." />
+              <i class="fa-solid fa-eye eye-show"></i>
+            </div>
+            <span class="error" id="error2"></span>
+            <p class="sign">
+              Don't have an account? <a href="" class="sign">Sign in</a>
+            </p>
+          </div>
+          <div class="modal-footer">
+            <button class="login-btn">Login</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal sign-container hide">
+      <div class="modal-bg">
+        <div class="modal-img">
+          <img src="./img/Thousand-03.png" alt="" class="modalimg" />
+        </div>
+        <div class="modal-container">
+          <div class="modal-header">
+            <h3>Signin</h3>
+            <i class="fa-solid fa-xmark close-icon close-sign"></i>
+          </div>
+          <div class="modal-body">
+            <label for="user-signin">User</label>
+            <input type="text" placeholder="user..." id="user-signin" />
+            <span class="error" id="error3"></span>
+            <label for="pass-signin">Password</label>
+            <input
+              type="password"
+              placeholder="password...."
+              id="pass-signin"
+            />
+            <span class="error" id="error4"></span>
+            <label for="re-pass">Nhập lại password...</label>
+            <input
+              type="password"
+              id="re-pass"
+              placeholder="nhap lai password"
+            />
+            <span class="error" id="error5"></span>
+          </div>
+          <div class="modal-footer">
+            <button class="signin-btn">Signin</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="content1 container">
+      <div class="content1-left">
+        <p class="title content1-title">
+          Explore and <br />
+          travel
+        </p>
+        <p class="sub-title">Holiday finder</p>
+        <input type="text" placeholder="Location" />
+        <button class="explore-btn btn">Explore</button>
+      </div>
+      <div class="contnet1-right">
+        <img src="./img/thousand-01 1.png" alt="" />
+      </div>
+    </div>
+    <div class="content2 container">
+      <div class="content2-left">
+        <img src="img/Thousand-02 1.png" alt="" />
+      </div>
+      <div class="conten2-right">
+        <p class="title content2-title">
+          A new way to explore the <br />
+          world
+        </p>
+        <p class="content2-content">
+          For decades travellers have reached for Lonely Planet books when
+          looking to plan and execute their perfect trip, but now, they can also
+          let Lonely Planet Experiences lead the way
+        </p>
+        <button class="btn btn-learn">Learn more</button>
+      </div>
+    </div>
+    <div class="content3 container">
+      <p class="title content3-title">Feature destinations</p>
+      <div class="slider">
+        <div class="slider-img">
+          <img src="./img/Raja ampat.png" alt="" />
+        </div>
+        <div class="slider-img">
+          <img src="./img/Fanjingshan.png" alt="" />
+        </div>
+        <div class="slider-img">
+          <img src="./img/Vevey.png" alt="" />
+        </div>
+        <div class="slider-img">
+          <img src="./img/Skadar.png" alt="" />
+        </div>
+        <div class="slider-img">
+          <img src="./img/Skadar.png" alt="" />
+        </div>
+        <div class="slider-img">
+          <img src="./img/Skadar.png" alt="" />
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="container">
+        <div class="footer-flex">
+          <ul class="footer-left">
+            <img src="./img/logo.png" alt="" />
+            <p class="footer-left-content">
+              Plan and book your perfect trip with expert advice, travel tips
+              destination information from us
+            </p>
+            <a href="" class="footer-logo"
+              >©2020 Thousand Sunny. All rights reserved</a
+            >
+          </ul>
+          <div class="footer-right">
+            <ul>
+              <h3 class="footer-title">Destinations</h3>
+              <a href=""><li>Africa</li></a>
+              <a href=""><li>Antarctica</li></a>
+              <a href=""><li>Asia</li></a>
+              <a href=""> <li>Europe</li></a>
+              <a href=""><li>America</li></a>
+            </ul>
+            <ul>
+              <h3 class="footer-title">Shop</h3>
+              <a href=""><li>Destinations Guides</li></a>
+              <a href=""> <li>Pictorial & Gifts</li></a>
+              <a href=""><li>Special Offers</li></a>
+              <a href=""><li>Delivery Times</li></a>
+              <a href=""><li>FAQs</li></a>
+            </ul>
+            <ul>
+              <h3 class="footer-title">Interests</h3>
+              <a href=""><li>Adventure Travel</li></a>
+              <a href=""><li>Art And Culture</li></a>
+              <a href=""><li>Wildlife And Nature</li></a>
+              <a href=""><li>Family Holidays</li></a>
+              <a href=""><li>Food And Drink</li></a>
+            </ul>
+          </div>
+        </div>
+
+        <ul class="footer-link">
+          <li>
+            <a href=""><i class="fa-brands fa-twitter twitter-icon"></i></a>
+          </li>
+          <li>
+            <a href=""><i class="fa-brands fa-facebook-f facebook-icon"></i></a>
+          </li>
+          <li>
+            <a href=""><i class="fa-brands fa-instagram instagram-icon"></i></a>
+          </li>
+          <li>
+            <a href=""><i class="fa-brands fa-linkedin-in linked-icon"></i></a>
+          </li>
+          <li>
+            <a href=""><i class="fa-brands fa-youtube youtube-icon"></i></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </body>
+  <script
+    type="text/javascript"
+    src="https://code.jquery.com/jquery-1.11.0.min.js"
+  ></script>
+  <script
+    type="text/javascript"
+    src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"
+  ></script>
+  <script
+    type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+  ></script>
+  <script src="app.js"></script>
+</html>
