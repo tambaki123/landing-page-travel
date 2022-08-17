@@ -105,6 +105,7 @@ nav li a:hover {
 .modal-img {
   width: 500px;
   height: 500px;
+  max-width: 100%;
 }
 .modal-img img {
   width: 100%;
@@ -433,17 +434,23 @@ nav li a:hover {
   header {
     padding: 10px 20px 0 20px;
   }
+  .modal-img {
+    width: 300px;
+    height: 300px;
+  }
   .modal-img img {
     width: 100%;
   }
   .modal-container {
     width: 100%;
+    max-width: 100%;
   }
   .modal-bg {
     width: 100%;
     background-color: white;
     width: 65%;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     border-radius: 8px;
@@ -590,10 +597,6 @@ nav li a:hover {
   .content3 {
     padding: 0 20px;
   }
-  .modal-container {
-    padding-left: 0;
-  }
-
   .modal-img img {
     width: 100%;
     object-fit: contain;
